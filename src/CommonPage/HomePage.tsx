@@ -13,6 +13,9 @@ export function HomePage() {
           <Link href={'/props'}>props pattern</Link>
         </ListItem>
         <ListItem>
+          <Link href={'/useContext'}>useContext pattern</Link>
+        </ListItem>
+        <ListItem>
           <Link href={'/useRef'}>useRef pattern</Link>
           <List>
             <ListItem>

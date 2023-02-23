@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom'
 import { HomePage } from './CommonPage/HomePage'
 import { CreatePortalPage } from './CreatePortalPage/CreatePortalPage'
 import { PropsPage } from './PropsPage/PropsPage'
+import { UseContextPage } from './UseContextPage/UseContextPage'
 import { ForwardRefPage } from './UseRefPage/ForwardRefPage'
 import { UseImperativeHandlePage } from './UseRefPage/UseImperativeHandlePage'
 import UseRefPage from './UseRefPage/UseRefPage'
@@ -31,6 +32,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage/>}/>
         <Route path="/props" element={<PropsPage/>}/>
+        <Route path="/useContext" element={<UseContextPage/>}/>
         <Route path="/useRef" element={<UseRefPage/>}/>
         <Route path="/useRef/forwardRef"
                element={<ForwardRefPage/>}
