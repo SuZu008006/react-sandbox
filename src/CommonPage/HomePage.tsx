@@ -18,6 +18,9 @@ export function HomePage() {
             <ListItem>
               <Link href={'/useRef/forwardRef'}>forwardRef</Link>
             </ListItem>
+            <ListItem>
+              <Link href={'/useRef/useImperativeHandle'}>useImperativeHandle</Link>
+            </ListItem>
           </List>
         </ListItem>
         <ListItem>

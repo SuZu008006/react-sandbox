@@ -3,14 +3,10 @@ import React, { useRef } from 'react'
 import { PageHeader } from '../CommonPage/PageHeader'
 
 export default function UseRefPage() {
-  const inputRef = useRef<HTMLInputElement>(null)
+  const inputRef = useRef({} as HTMLInputElement)
 
   function inputFocus() {
-    console.log(inputRef)
-    if (inputRef.current) {
-      return inputRef.current.focus()
-    }
-    return null
+    return inputRef.current.focus()
   }
 
   return (
@@ -22,7 +18,7 @@ export default function UseRefPage() {
           ref={inputRef}
           placeholder="focus here"
         />
-        <button onClick={() => inputFocus()}>
+        <button onClick={inputFocus}>
           push!
         </button>
       </Box>

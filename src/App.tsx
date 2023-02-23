@@ -5,6 +5,7 @@ import { HomePage } from './CommonPage/HomePage'
 import { CreatePortalPage } from './CreatePortalPage/CreatePortalPage'
 import { PropsPage } from './PropsPage/PropsPage'
 import { ForwardRefPage } from './UseRefPage/ForwardRefPage'
+import { UseImperativeHandlePage } from './UseRefPage/UseImperativeHandlePage'
 import UseRefPage from './UseRefPage/UseRefPage'
 
 function App() {
@@ -28,28 +29,16 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Routes>
-        <Route
-          path="/"
-          element={<HomePage/>}
+        <Route path="/" element={<HomePage/>}/>
+        <Route path="/props" element={<PropsPage/>}/>
+        <Route path="/useRef" element={<UseRefPage/>}/>
+        <Route path="/useRef/forwardRef"
+               element={<ForwardRefPage/>}
         />
-        <Route
-          path="/props"
-          element={
-            <PropsPage/>
-          }
+        <Route path="/useRef/useImperativeHandle"
+               element={<UseImperativeHandlePage/>}
         />
-        <Route
-          path="/useRef"
-          element={<UseRefPage/>}
-        />
-        <Route
-          path="/useRef/forwardRef"
-          element={<ForwardRefPage/>}
-        />
-        <Route
-          path="/createPortal"
-          element={<CreatePortalPage/>}
-        />
+        <Route path="/createPortal" element={<CreatePortalPage/>}/>
       </Routes>
     </ThemeProvider>
   )
