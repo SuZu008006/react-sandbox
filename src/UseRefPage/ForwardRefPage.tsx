@@ -4,7 +4,7 @@ import { PageHeader } from '../CommonPage/PageHeader'
 
 const FocusInput = forwardRef<HTMLInputElement>(
   (props, ref) => {
-    return <input type="text" ref={ref}/>
+    return <input type="text" placeholder="focus here" ref={ref}/>
   }
 )
 

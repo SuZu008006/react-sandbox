@@ -19,7 +19,7 @@ const FocusInput = forwardRef<Handler>(
       }
     })
 
-    return <input type="text" ref={inputRef}/>
+    return <input type="text" placeholder="focus here" ref={inputRef}/>
   }
 )
 
