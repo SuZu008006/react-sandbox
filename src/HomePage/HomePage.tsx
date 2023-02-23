@@ -10,6 +10,9 @@ export function HomePage() {
       </AppBar>
       <List>
         <ListItem>
+          <Link href={'/props'}>props pattern</Link>
+        </ListItem>
+        <ListItem>
           <Link href={'/useRef'}>useRef pattern</Link>
         </ListItem>
         <ListItem>

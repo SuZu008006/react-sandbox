@@ -1,9 +1,10 @@
 import { createTheme, ThemeProvider } from '@mui/material'
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import { CreatePortalPage } from './createPortal/CreatePortalPage'
+import { CreatePortalPage } from './CreatePortalPage/CreatePortalPage'
 import { HomePage } from './HomePage/HomePage'
-import UseRefPage from './useRef/UseRefPage'
+import { PropsPage } from './PropsPage/PropsPage'
+import UseRefPage from './UseRefPage/UseRefPage'
 
 function App() {
   const theme = createTheme({
@@ -30,6 +31,12 @@ function App() {
           path="/"
           element={
             <HomePage/>
+          }
+        />
+        <Route
+          path="/props"
+          element={
+            <PropsPage/>
           }
         />
         <Route
