@@ -1,9 +1,10 @@
 import { createTheme, ThemeProvider } from '@mui/material'
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
+import { HomePage } from './CommonPage/HomePage'
 import { CreatePortalPage } from './CreatePortalPage/CreatePortalPage'
-import { HomePage } from './HomePage/HomePage'
 import { PropsPage } from './PropsPage/PropsPage'
+import { ForwardRefPage } from './UseRefPage/ForwardRefPage'
 import UseRefPage from './UseRefPage/UseRefPage'
 
 function App() {
@@ -29,9 +30,7 @@ function App() {
       <Routes>
         <Route
           path="/"
-          element={
-            <HomePage/>
-          }
+          element={<HomePage/>}
         />
         <Route
           path="/props"
@@ -41,15 +40,15 @@ function App() {
         />
         <Route
           path="/useRef"
-          element={
-            <UseRefPage/>
-          }
+          element={<UseRefPage/>}
+        />
+        <Route
+          path="/useRef/forwardRef"
+          element={<ForwardRefPage/>}
         />
         <Route
           path="/createPortal"
-          element={
-            <CreatePortalPage/>
-          }
+          element={<CreatePortalPage/>}
         />
       </Routes>
     </ThemeProvider>

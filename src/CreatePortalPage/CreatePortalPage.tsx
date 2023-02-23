@@ -1,6 +1,7 @@
-import { AppBar, Box, Typography } from '@mui/material'
+import { Box } from '@mui/material'
 import React, { useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
+import { PageHeader } from '../CommonPage/PageHeader'
 
 export function CreatePortalPage() {
   function ModalContent(props: { onClose: () => void }) {
@@ -25,11 +26,8 @@ export function CreatePortalPage() {
 
   return (
     <>
-      <AppBar position="static">
-        <Typography variant="h6" component="div" mx={2}>
-          CreatePortal pattern
-        </Typography>
-      </AppBar>
+      <PageHeader title="createPortal pattern"/>
+
       <Box sx={{ p: 2 }}>
         <div ref={maybeModalRef}>
           <button onClick={() => setShowModal(true)}>

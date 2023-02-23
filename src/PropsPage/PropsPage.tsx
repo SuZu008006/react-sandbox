@@ -1,5 +1,6 @@
-import { AppBar, Box, Typography } from '@mui/material'
-import { useState } from 'react'
+import { Box } from '@mui/material'
+import React, { useState } from 'react'
+import { PageHeader } from '../CommonPage/PageHeader'
 
 function Child(props: { title: boolean, flag: () => void }) {
   return (
@@ -18,11 +19,7 @@ export function PropsPage() {
 
   return (
     <>
-      <AppBar position="static">
-        <Typography variant="h6" component="div" mx={2}>
-          Props pattern
-        </Typography>
-      </AppBar>
+      <PageHeader title="props pattern"/>
 
       <Box sx={{ p: 2 }}>
         <Child title={flag} flag={() => setFlag(!flag)}></Child>

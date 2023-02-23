@@ -14,6 +14,11 @@ export function HomePage() {
         </ListItem>
         <ListItem>
           <Link href={'/useRef'}>useRef pattern</Link>
+          <List>
+            <ListItem>
+              <Link href={'/useRef/forwardRef'}>forwardRef</Link>
+            </ListItem>
+          </List>
         </ListItem>
         <ListItem>
           <Link href={'/createPortal'}>createPortal pattern</Link>

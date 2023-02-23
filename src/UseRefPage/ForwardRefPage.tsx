@@ -1,12 +1,15 @@
 import { Box } from '@mui/material'
-import React, { useRef } from 'react'
+import { useRef } from 'react'
 import { PageHeader } from '../CommonPage/PageHeader'
 
-export default function UseRefPage() {
+function FocusInput(props: { ref: any }) {
+  return <input type="text" ref={props.ref}/>
+}
+
+export function ForwardRefPage() {
   const inputRef = useRef<HTMLInputElement>(null)
 
   function inputFocus() {
-    console.log(inputRef)
     if (inputRef.current) {
       return inputRef.current.focus()
     }
@@ -18,9 +21,8 @@ export default function UseRefPage() {
       <PageHeader title="useRef pattern"/>
 
       <Box sx={{ p: 2 }}>
-        <input
+        <FocusInput
           ref={inputRef}
-          placeholder="focus here"
         />
         <button onClick={() => inputFocus()}>
           push!
