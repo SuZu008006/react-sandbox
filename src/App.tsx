@@ -1,6 +1,7 @@
 import { createTheme, ThemeProvider } from '@mui/material'
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
+import UseRefKeyboardEventPage from './UseRefPage/UseRefKeyboardEventPage'
 import { HomePage } from './CommonPage/HomePage'
 import { CreatePortalPage } from './CreatePortalPage/CreatePortalPage'
 import { PropsPage } from './PropsPage/PropsPage'
@@ -39,6 +40,9 @@ function App() {
         />
         <Route path="/useRef/useImperativeHandle"
                element={<UseImperativeHandlePage/>}
+        />
+        <Route path="/useRef/keyboardEvent"
+               element={<UseRefKeyboardEventPage/>}
         />
         <Route path="/createPortal" element={<CreatePortalPage/>}/>
       </Routes>

@@ -24,6 +24,9 @@ export function HomePage() {
             <ListItem>
               <Link href={'/useRef/useImperativeHandle'}>useImperativeHandle</Link>
             </ListItem>
+            <ListItem>
+              <Link href={'/useRef/keyboardEvent'}>keyboardEvent</Link>
+            </ListItem>
           </List>
         </ListItem>
         <ListItem>
