@@ -32,6 +32,9 @@ export function HomePage() {
         <ListItem>
           <Link href={'/createPortal'}>createPortal pattern</Link>
         </ListItem>
+        <ListItem>
+          <Link href={'/css'}>css sanbox</Link>
+        </ListItem>
       </List>
     </>
   )

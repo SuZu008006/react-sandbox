@@ -9,6 +9,7 @@ import { UseContextPage } from './UseContextPage/UseContextPage'
 import { ForwardRefPage } from './UseRefPage/ForwardRefPage'
 import { UseImperativeHandlePage } from './UseRefPage/UseImperativeHandlePage'
 import UseRefPage from './UseRefPage/UseRefPage'
+import { CssPage } from './CssPage/CssPage'
 
 function App() {
   const theme = createTheme({
@@ -45,6 +46,7 @@ function App() {
                element={<UseRefKeyboardEventPage/>}
         />
         <Route path="/createPortal" element={<CreatePortalPage/>}/>
+        <Route path="/css" element={<CssPage/>}/>
       </Routes>
     </ThemeProvider>
   )
