@@ -14,7 +14,7 @@ function Child(props: { title: boolean, flag: () => void }) {
   )
 }
 
-export function PropsPage() {
+export default function PropsPage() {
   const [flag, setFlag] = useState(false)
 
   return (

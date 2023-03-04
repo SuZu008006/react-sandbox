@@ -8,7 +8,6 @@
     "@mui/material": "^5.11.9",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.12",
     "@types/react": "^18.0.28",
@@ -44,5 +43,22 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@testing-library/user-event": "^14.4.3",
+    "eslint": "^8.29.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-import-resolver-typescript": "^3.5.2",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "jest-junit": "^14.0.0",
+    "jest-mock": "^29.3.1",
+    "prettier": "^2.8.1",
+    "prettier-eslint": "^15.0.1",
+    "prettier-eslint-cli": "^7.1.0"
   }
 }
