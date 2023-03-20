@@ -1,7 +1,7 @@
 import { Box } from '@mui/material'
+import { PageHeader } from 'CommonPage/PageHeader'
 import React, { useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
-import { PageHeader } from '../CommonPage/PageHeader'
 
 export function CreatePortalPage() {
   function ModalContent(props: { onClose: () => void }) {
